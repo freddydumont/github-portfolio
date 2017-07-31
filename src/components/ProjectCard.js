@@ -16,7 +16,7 @@ const ProjectCard = ({ projectImage, link, name, description, technology, techLo
     </div>
 
     <div className="row text-center" style={{ margin: '20px' }}>
-      <a className="btn btn-launch" href="http://jobb.ie" target="blank">Launch</a>
+      <a className="btn btn-launch" href={link} title="Application website" >Launch</a>
     </div>
   </div>
 );

@@ -74,3 +74,17 @@ p {
   justify-content: space-around;
   align-items: center;
 }
+
+.btn-launch {
+	width: 100%;
+	max-width: 200px;
+	background-color: #549657;
+	color: #fff;
+	box-shadow: 0px 2px 5px 1px darkgrey;
+}
+
+.btn-launch:hover,
+.btn-launch:focus {
+	color: #fff;
+	background: #3d7140;
+}
