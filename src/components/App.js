@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
-import projectImages from '../projectImages';
+import data from '../cardData';
 import SideContent from './SideContent';
 import ProjectCard from './ProjectCard';
 
@@ -8,9 +8,11 @@ class App extends Component {
   render() {
     const createCards = () => {
       let cards = [];
-      for (var i = 0; i < 4; i++) {
+      for (var i = 0; i < 1; i++) {
+        // get appropriate data and populate props
+        let { projectImage, link, name, description, technology } = data[i];
         cards.push(
-          <ProjectCard projectImage={projectImages[i]} />
+          <ProjectCard projectImage={projectImage} link={link} name={name} description={description} technology={technology} />
         );
       }
       return cards;
