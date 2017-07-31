@@ -8,6 +8,9 @@ class App extends Component {
       <div className="App container">
         <div className="row">
           <SideContent />
+          <aside className="col-sm-3 about-me about-side text-center">
+            <SideContent />
+          </aside>
         </div>
       </div>
     );
