@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import SideContent from './SideContent';
+import ProjectCard from './ProjectCard';
 
 class App extends Component {
   render() {
     return (
       <div className="App container">
         <div className="row">
-          <SideContent />
           <aside className="col-sm-3 about-me about-side text-center">
             <SideContent />
           </aside>
+          <section className="col-sm-9">
+            <ProjectCard />
+          </section>
         </div>
       </div>
     );
