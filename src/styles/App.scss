@@ -67,12 +67,22 @@ p {
 	box-shadow: 0 0 2px 2px lightgrey;
   padding: 30px;
   margin-bottom: 100px;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.logo {
+  margin: 5px;
 }
 
 .tech-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 10px 0;
 }
 
 .btn-launch {
