@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import projectImages from '../projectImages';
 import SideContent from './SideContent';
 import ProjectCard from './ProjectCard';
 
@@ -12,7 +13,7 @@ class App extends Component {
             <SideContent />
           </aside>
           <section className="col-sm-9">
-            <ProjectCard />
+            <ProjectCard projectImage={projectImages[0]} />
           </section>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
-import projectImage from '../images/pokesimon.png';
 
-const ProjectCard = () => (
+const ProjectCard = ({ projectImage }) => (
   <div className="col-sm-offset-2 col-sm-8 project">
     <img src={projectImage} alt="App in devices" className="img-responsive" />
 
