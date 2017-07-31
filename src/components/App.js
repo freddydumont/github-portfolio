@@ -10,6 +10,7 @@ class App extends Component {
       <div className="App container">
         <div className="row">
           <aside className="col-sm-3 about-me about-side text-center">
+          <aside className="col-sm-3 about-me text-center">
             <SideContent />
           </aside>
           <section className="col-sm-9">
