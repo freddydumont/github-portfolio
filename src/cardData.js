@@ -13,6 +13,7 @@ import jquery from './images/techlogos/jquery.png'
 import router from './images/techlogos/react-router.svg'
 import typed from './images/techlogos/typed.png'
 import bootstrap from './images/techlogos/bootstrap.png'
+import js from './images/techlogos/js.svg'
 
 export default [
   {
@@ -49,6 +50,17 @@ export default [
     techLogos: [
       <img src={react} alt="React" key="React" className="logo" />,
       <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
+    ]
+  },
+  {
+    projectImage: jscalc,
+    link: "https://jscalc-9000.surge.sh/",
+    name: "Javascript Calculator",
+    description: "A reverse engineering of macOS' calculator with keyboard support.",
+    technology: "Pure Javascript. And a little bit of Sass.",
+    techLogos: [
+      <img src={js} alt="JavaScript" key="JavaScript" className="logo" />,
+      <img src={sass} alt="Sass" key="Sass" className="logo" />,
     ]
   },
 ]
