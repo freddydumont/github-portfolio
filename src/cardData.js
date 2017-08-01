@@ -12,6 +12,7 @@ import sass from './images/techlogos/sass.svg'
 import jquery from './images/techlogos/jquery.png'
 import router from './images/techlogos/react-router.svg'
 import typed from './images/techlogos/typed.png'
+import bootstrap from './images/techlogos/bootstrap.png'
 
 export default [
   {
@@ -38,6 +39,17 @@ export default [
       <img src={redux} alt="Redux" className="logo" />,
       <img src={jquery} alt="jQuery" className="logo" />,
       // <img src={router} alt="React Router" className="logo" />,
+    ]
+  },
+  {
+    projectImage: pomodoro,
+    link: "https://freddydumont.github.io/pomodoro-clock/",
+    name: "Burmese Pomodoro",
+    description: ["A time management tool based on the ", <a key={'pomodoro wiki'} href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank" rel="noopener noreferrer">Pomodoro Technique</a>, " allowing the user to set work intervals separated by short breaks. A soothing burmese bell sound annouces the end of a session."],
+    technology: "Pomodoro is a React application using Bootstrap for the layout and Moment.js to format the timer.",
+    techLogos: [
+      <img src={react} alt="React" className="logo" />,
+      <img src={bootstrap} alt="Bootstrap" className="logo" />,
     ]
   },
 ]
