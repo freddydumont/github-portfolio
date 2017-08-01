@@ -59,8 +59,8 @@ export default [
     description: "A reverse engineering of macOS' calculator with keyboard support.",
     technology: "Pure Javascript. And a little bit of Sass.",
     techLogos: [
-      <img src={js} alt="JavaScript" key="JavaScript" className="logo" />,
-      <img src={sass} alt="Sass" key="Sass" className="logo" />,
+      <img src={js} alt="JavaScript" key="JavaScript" width={75} className="logo" />,
+      <img src={sass} alt="Sass" key="Sass" width={75} className="logo" />,
     ]
   },
 ]
