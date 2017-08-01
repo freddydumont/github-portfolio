@@ -21,10 +21,10 @@ class App extends Component {
     return (
       <div className="App container">
         <div className="row">
-          <aside className="col-sm-3 about-me text-center">
+          <section className="col-sm-3 about-me text-center">
             <SideContent />
-          </aside>
-          <section className="col-sm-9">
+          </section>
+          <section className="col-sm-9 col-sm-offset-3">
             {createCards()}
           </section>
         </div>
