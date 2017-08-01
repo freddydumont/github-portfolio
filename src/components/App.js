@@ -12,7 +12,7 @@ class App extends Component {
         // get appropriate data and populate props
         let { projectImage, link, name, description, technology, techLogos } = data[i];
         cards.push(
-          <ProjectCard projectImage={projectImage} link={link} name={name} description={description} technology={technology} techLogos={techLogos} />
+          <ProjectCard key={name} projectImage={projectImage} link={link} name={name} description={description} technology={technology} techLogos={techLogos} />
         );
       }
       return cards;
