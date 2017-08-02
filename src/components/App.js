@@ -3,6 +3,7 @@ import '../styles/App.css';
 import data from '../cardData';
 import SideContent from './SideContent';
 import ProjectCard from './ProjectCard';
+import MobileFooter from './MobileFooter';
 
 class App extends Component {
   render() {
@@ -21,12 +22,15 @@ class App extends Component {
     return (
       <div className="App container">
         <div className="row">
-          <section className="col-sm-3 about-me text-center">
-            <SideContent />
-          </section>
-          <section className="col-sm-9 col-sm-offset-3">
-            {createCards()}
-          </section>
+          <main>
+            <section className="col-sm-3 about-me text-center">
+              <SideContent />
+            </section>
+            <section className="col-sm-9 col-sm-offset-3">
+              {createCards()}
+            </section>
+          </main>
+          <MobileFooter />
         </div>
       </div>
     );

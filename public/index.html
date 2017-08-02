@@ -35,6 +35,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- font awesome  -->
   <script src="https://use.fontawesome.com/c4d415df61.js"></script>
+  <!-- mobile footer -->
+  <script>
+    $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y > 500) {
+        $('.mobile-footer').slideDown();
+      } else {
+        $('.mobile-footer').slideUp();
+      }
+    });
+  </script>
 </body>
 
 </html>
