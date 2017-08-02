@@ -4,6 +4,7 @@ import data from '../cardData';
 import SideContent from './SideContent';
 import ProjectCard from './ProjectCard';
 import MobileFooter from './MobileFooter';
+import SeeMore from './SeeMore';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             </section>
             <section className="col-sm-9 col-sm-offset-3">
               {createCards()}
+              <SeeMore />
             </section>
           </main>
           <MobileFooter />
