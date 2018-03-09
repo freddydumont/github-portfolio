@@ -13,6 +13,7 @@ import jquery from './images/techlogos/jquery.png'
 import typed from './images/techlogos/typed.png'
 import bootstrap from './images/techlogos/bootstrap.png'
 import js from './images/techlogos/js.svg'
+import moment from './images/techlogos/momentjs.jpg'
 
 export default [
   {
@@ -44,10 +45,11 @@ export default [
     projectImage: pomodoro,
     link: "https://freddydumont.github.io/pomodoro-clock/",
     name: "Burmese Pomodoro",
-    description: ["A time management tool based on the ", <a key={'pomodoro wiki'} href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank" rel="noopener noreferrer">Pomodoro Technique</a>, " allowing the user to set work intervals separated by short breaks. A soothing burmese bell sound annouces the end of a session."],
+    description: ["A time management tool based on the ", <a key={'pomodoro wiki'} href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank" rel="noopener noreferrer">Pomodoro Technique</a>, " allowing the user to set work intervals separated by short breaks. A soothing burmese bell sound annouces the end of a session—and the start of a new one."],
     technology: "Pomodoro is a React application using Bootstrap for the layout and Moment.js to format the timer.",
     techLogos: [
       <img src={react} alt="React" key="React" className="logo" />,
+      <img src={moment} alt="Moment" key="moment" className="logo" />,
       <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
     ]
   },
