@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     const createCards = () => {
       let cards = [];
-      for (var i = 0; i < 4; i++) {
+      for (var i = 0; i < data.length; i++) {
         // get appropriate data and populate props
         let { projectImage, link, name, description, technology, techLogos } = data[i];
         cards.push(

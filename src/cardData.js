@@ -1,6 +1,5 @@
 import React from 'react';
 // projects
-import jscalc from './images/calc.png';
 import pokesimon from './images/pokesimon.png';
 import pomodoro from './images/pomodoro.png';
 import tictactoe from './images/tictactoe.png';
@@ -8,11 +7,9 @@ import tictactoe from './images/tictactoe.png';
 import howler from './images/techlogos/howler.svg'
 import react from './images/techlogos/react.svg'
 import redux from './images/techlogos/redux.svg'
-import sass from './images/techlogos/sass.svg'
 import jquery from './images/techlogos/jquery.png'
 import typed from './images/techlogos/typed.png'
 import bootstrap from './images/techlogos/bootstrap.png'
-import js from './images/techlogos/js.svg'
 import moment from './images/techlogos/momentjs.jpg'
 
 export default [
@@ -51,17 +48,6 @@ export default [
       <img src={react} alt="React" key="React" className="logo" />,
       <img src={moment} alt="Moment" key="moment" className="logo" />,
       <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
-    ]
-  },
-  {
-    projectImage: jscalc,
-    link: "https://jscalc-9000.surge.sh/",
-    name: "Javascript Calculator",
-    description: "A reverse engineering of macOS' calculator with keyboard support.",
-    technology: "Pure Javascript. And a little bit of Sass.",
-    techLogos: [
-      <img src={js} alt="JavaScript" key="JavaScript" width={75} className="logo" />,
-      <img src={sass} alt="Sass" key="Sass" width={75} className="logo" />,
     ]
   },
 ]
