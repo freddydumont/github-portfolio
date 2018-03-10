@@ -3,6 +3,7 @@ import React from 'react';
 import pokesimon from './images/pokesimon.png';
 import pomodoro from './images/pomodoro.png';
 import tictactoe from './images/tictactoe.png';
+import digispeed from './images/digispeed.png';
 // tech logos
 import howler from './images/techlogos/howler.svg'
 import react from './images/techlogos/react.svg'
@@ -11,8 +12,25 @@ import jquery from './images/techlogos/jquery.png'
 import typed from './images/techlogos/typed.png'
 import bootstrap from './images/techlogos/bootstrap.png'
 import moment from './images/techlogos/momentjs.jpg'
+import gatsby from './images/techlogos/gatsby.svg'
+import sass from './images/techlogos/sass.svg'
+import netlify from './images/techlogos/netlify.svg'
 
 export default [
+  {
+    projectImage: digispeed,
+    link: "https://www.digispeed.io",
+    name: "digispeed.io",
+    description: "This website was built for a client who needed an online presence for their business. The company logo provided influenced the design decisions. We chose to keep a simple document feeling to complement its black and white nature. Smooth animations and well designed icons really improve the usability of the site.",
+    technology: "I believe in using the right tool for the job at hand. In this case, we needed a simple framework to quickly design and build a landing page. Gatsby is the obvious choice in this category, having all the features needed for easy navigation and extensibility, already setup with React.js. Bootstrap and Sass are used to power the CSS, and Netlify deploys the website at minimal costs.",
+    techLogos: [
+      <img src={gatsby} alt="Gatsby" key="Gatsby" className="logo" />,
+      <img src={react} alt="React" key="React" className="logo" />,
+      <img src={sass} alt="Sass" key="Sass" className="logo" />,
+      <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
+      <img src={netlify} alt="Netlify" key="Netlify" className="logo" />,
+    ]
+  },
   {
     projectImage: pokesimon,
     link: "https://freddydumont.github.io/simon-game/",
