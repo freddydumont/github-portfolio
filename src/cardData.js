@@ -4,6 +4,7 @@ import pokesimon from './images/pokesimon.png';
 import pomodoro from './images/pomodoro.png';
 import tictactoe from './images/tictactoe.png';
 import digispeed from './images/digispeed.png';
+import labyrinth from './images/labyrinth.png';
 // tech logos
 import howler from './images/techlogos/howler.svg'
 import react from './images/techlogos/react.svg'
@@ -15,13 +16,14 @@ import moment from './images/techlogos/momentjs.jpg'
 import gatsby from './images/techlogos/gatsby.svg'
 import sass from './images/techlogos/sass.svg'
 import netlify from './images/techlogos/netlify.svg'
+import tachyons from './images/techlogos/tachyons.png'
 
 export default [
   {
     projectImage: digispeed,
     link: "https://www.digispeed.io",
     name: "digispeed.io",
-    description: "This website was built for a client who needed an online presence for their business. The company logo provided influenced the design decisions. We chose to keep a simple document feeling to complement its black and white nature. Smooth animations and well designed icons really improve the usability of the site.",
+    description: "This website was built for a client who needed an online presence for their business. The provided company logo influenced the design decisions. We chose to keep a simple document feeling to complement its black and white nature. Smooth animations and well designed icons really improve the usability of the site.",
     technology: "I believe in using the right tool for the job at hand. In this case, we needed a simple framework to quickly design and build a landing page. Gatsby is the obvious choice in this category, having all the features needed for easy navigation and extensibility, already setup with React.js. Bootstrap and Sass are used to power the CSS, and Netlify deploys the website at minimal costs.",
     techLogos: [
       <img src={gatsby} alt="Gatsby" key="Gatsby" className="logo" />,
@@ -29,6 +31,17 @@ export default [
       <img src={sass} alt="Sass" key="Sass" className="logo" />,
       <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
       <img src={netlify} alt="Netlify" key="Netlify" className="logo" />,
+    ]
+  },
+  {
+    projectImage: labyrinth,
+    link: "https://freddydumont.github.io/the-labyrinth-roguelike/",
+    name: "The Labyrinth (beta)",
+    description: ['A roguelike game based on the ancient Greek myth of ', <a key={'theseus'} href="https://en.wikipedia.org/wiki/Theseus#The_myth_of_Theseus_and_the_Minotaur" title="Wikipedia page of Theseus" target="_blank" rel="noopener noreferrer">Theseus and the Minotaur</a>, ', featuring dungeon-crawling, leveling and permadeath. The goal is to reach the depth of the labyrinth and slay the Minotaur before he devours the helpless Athenian youths sent as tribute.'],
+    technology: ["The Labyrinth makes use of the ", <a key={'rotjs'} href="http://ondras.github.io/rot.js/hp/" title="rot.js homepage" target="_blank" rel="noopener noreferrer">rot.js</a>, " library to manage some aspects of roguelike game development, React.js for the front end and Tachyons for the CSS. A leaderboard will be implemented in Firebase or some other serveless solution."],
+    techLogos: [
+      <img src={react} alt="React" key="React" className="logo" />,
+      <img src={tachyons} alt="Tachyons" key="tachyons" className="logo" />,
     ]
   },
   {
