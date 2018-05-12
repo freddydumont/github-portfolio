@@ -1,2 +1,0 @@
-npm run build
-gh-pages -d build --remote publish -b master

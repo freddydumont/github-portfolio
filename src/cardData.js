@@ -5,6 +5,7 @@ import pomodoro from './images/pomodoro.png';
 import tictactoe from './images/tictactoe.png';
 import digispeed from './images/digispeed.png';
 import labyrinth from './images/labyrinth.png';
+import starwars from './images/star-wars.png';
 // tech logos
 import howler from './images/techlogos/howler.svg'
 import react from './images/techlogos/react.svg'
@@ -17,8 +18,22 @@ import gatsby from './images/techlogos/gatsby.svg'
 import sass from './images/techlogos/sass.svg'
 import netlify from './images/techlogos/netlify.svg'
 import tachyons from './images/techlogos/tachyons.png'
+import reduxsaga from './images/techlogos/redux-saga.png'
 
 export default [
+  {
+    projectImage: starwars,
+    link: "https://freddydumont.github.io/star-wars-planet-guide/",
+    name: "Star Wars Planet Guide",
+    description: "A tool for Star Wars fans to browse and learn about the different planets of the Star Wars extended universe.",
+    technology: ["The Planet Guide makes use of redux-saga to handle asynchronous events such as the API calls to ", <a key={'swapi'} href="https://swapi.co" title="Star Wars API" target="_blank" rel="noopener noreferrer">SWAPI</a>, ". The DevExtreme React Grid component is used to present the data in a table handling filtering, sorting and the display of detailed information."],
+    techLogos: [
+      <img src={react} alt="React" key="React" className="logo" />,
+      <img src={redux} alt="Redux" key="Redux" className="logo" />,
+      <img src={reduxsaga} alt="redux-saga" key="reduxsaga" className="logo" />,
+      <img src={bootstrap} alt="Bootstrap" key="Bootstrap" className="logo" />,
+    ]
+  },
   {
     projectImage: digispeed,
     link: "https://www.digispeed.io",
